@@ -1,0 +1,346 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+header ul {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 2;
+}
+header ul li {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul li a {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 30px 15px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+}
+header ul li .dropdown-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px;
+  height: 0px;
+  position: absolute;
+  opacity: 0;
+  top: 80px;
+  left: 100px;
+  background-color: white;
+}
+header ul li .dropdown-menu a {
+  display: block;
+  font-weight: lighter;
+  background-color: white;
+}
+header ul li:hover li {
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0347ab;
+}
+header ul li:hover .dropdown-menu {
+  opacity: 1;
+  border-top: 3px solid #f5b904;
+  width: 110px;
+  transition: 0.3s;
+  transform-origin: top center;
+}
+header ul li:hover .dropdown-menu a {
+  color: black;
+  background-color: white;
+}
+header ul li:hover a {
+  height: 80px;
+  color: white;
+  background-color: #0347ab;
+}
+.hero1 {
+  width: 100%;
+  height: 800px;
+  background-image: url("https://mgsdemo.mgscoder.com/html5/acutip/images/background/main-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+}
+.hero1 .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 800px;
+}
+.hero1 .overlay .overlay-2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 60%;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  transform: skewX(-10deg);
+  transform-origin: top right;
+  min-height: 0;
+  z-index: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.hero1 .overlay .overlay-2 .text {
+  transform: skewX(10deg);
+}
+.hero1 h4 {
+  color: white;
+  font-size: 30px;
+}
+.hero1 h1 {
+  font-size: 54px;
+  color: #ffc107;
+  margin-top: 20px;
+}
+.hero1 p {
+  font-size: 14px;
+  color: white;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.title-layer {
+  height: 500px;
+}
+.title-layer .tag {
+  position: absolute;
+  left: 94px;
+  top: 970px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999;
+  font-family: "Montserrat", sans-serif;
+}
+.title-layer .title {
+  background-color: #ffc107;
+  width: 415px;
+  height: 78px;
+  position: absolute;
+  left: 100px;
+  top: 1000px;
+  z-index: 1;
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.title-layer .title:hover {
+  width: 500px;
+}
+.title-layer .title .white {
+  color: white;
+}
+.title-layer .title h1 {
+  padding: 10px;
+  color: #0347ab;
+}
+.title-layer .title ::after {
+  display: block;
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  bottom: 6px;
+  left: -7px;
+  content: "";
+  border: 1px solid #e7ae02;
+  background: #e7ae02;
+  transform: skew(0deg, 60deg);
+}
+.title-layer .intro-text {
+  color: #999;
+  font-size: 18px;
+  font-weight: "Montserrat", sans-serif;
+  position: absolute;
+  top: 1150px;
+  left: 100px;
+}
+
+.hero2 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.hero2 .img-one {
+  width: 324px;
+  height: 324px;
+  background-image: url("https://mgsdemo.mgscoder.com/html5/acutip/images/portfolio/thumb/1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.hero2 .img-one .overlay-one {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.hero2 .img-one .overlay-one .link {
+  color: #ffc107;
+}
+.hero2 .img-one .overlay-one h6 {
+  color: white;
+}
+.hero2 .img-one:hover .overlay-one {
+  opacity: 1;
+  width: 324px;
+  height: 324px;
+}
+.hero2 .img-two {
+  width: 324px;
+  height: 324px;
+  background-image: url("https://mgsdemo.mgscoder.com/html5/acutip/images/portfolio/thumb/2.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.hero2 .img-two .overlay-two {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.hero2 .img-two .overlay-two .link {
+  color: #ffc107;
+}
+.hero2 .img-two .overlay-two h6 {
+  color: white;
+}
+.hero2 .img-two:hover .overlay-two {
+  opacity: 1;
+  width: 324px;
+  height: 324px;
+}
+.hero2 .img-tri {
+  width: 324px;
+  height: 324px;
+  background-image: url("https://mgsdemo.mgscoder.com/html5/acutip/images/portfolio/thumb/3.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.hero2 .img-tri .overlay-tri {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.hero2 .img-tri .overlay-tri .link {
+  color: #ffc107;
+}
+.hero2 .img-tri .overlay-tri h6 {
+  color: white;
+}
+.hero2 .img-tri:hover .overlay-tri {
+  opacity: 1;
+  width: 324px;
+  height: 324px;
+}
+.hero2 .img-four {
+  width: 324px;
+  height: 324px;
+  background-image: url("https://mgsdemo.mgscoder.com/html5/acutip/images/portfolio/thumb/4.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.hero2 .img-four .overlay-four {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.hero2 .img-four .overlay-four .link {
+  color: #ffc107;
+}
+.hero2 .img-four .overlay-four h6 {
+  color: white;
+}
+.hero2 .img-four:hover .overlay-four {
+  opacity: 1;
+  width: 324px;
+  height: 324px;
+}/*# sourceMappingURL=styles.css.map */
